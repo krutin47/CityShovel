@@ -1,0 +1,176 @@
+.error{
+  color: tomato; 
+  font-size: 12px; 
+  padding-top: 4px
+}
+
+input.has_error{
+  border: 1px solid red;
+}
+
+input.is_valid{
+  border: 1px solid forestgreen;
+}
+
+input[type="email"].is_valid{
+  border: 1px solid forestgreen;
+}
+
+.display_none {
+  display: none;
+}
+
+.display_block {
+  display: block;
+}
+
+.bg-color--red {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+button.btn {
+  background-color: #044e7f;
+  border-color: #044e7f;
+}
+
+.full_window {
+  margin-top: 12vh;
+  width: 100vw;
+  height: 88vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.login_container {
+  max-width: 750px;
+  min-width: 70vmin;
+  max-height: 500px;
+  min-height: 50vmin;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.image_view {
+  min-height: 100%;
+  height: fit-content;
+}
+
+/* #root > div > div > div > div.form_container > form > div > div:nth-child(3) > button {
+  background-color: #044e7f;
+  border-color: #044e7f;
+  opacity: 1;
+  margin-top: 1rem;
+} */
+
+.image_view > img {
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.form_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+input {
+  margin: 0 0 0.5rem 0;
+}
+
+label {
+  margin-bottom: 0.2rem;
+}
+
+.login_text {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 24px;
+  color: #292929;
+}
+
+.register_navigation {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
+.forgot_navigation {
+  width: 100%;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+
+#root > div > div > div > div.form_container > form > div > div > div > div > p {
+  margin: 5px 15px;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .login_container {
+    max-width: 400px;
+    min-width: 60vw;
+    min-height: 60vh;
+    max-height: 800px;
+    flex-flow: column nowrap;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .form_container {
+    max-width: 100%;
+  }
+
+  .image_view {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 426px) {
+  .login_container {
+    max-width: 100%;
+    min-width: 100vw;
+    min-height: 60vh;
+    max-height: 80vh;
+    flex-flow: column nowrap;
+    align-content: center;
+    overflow: hidden;
+    box-shadow: unset;
+  }
+
+  .form_container {
+    max-width: 100%;
+  }
+
+  .image_view {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .login_container {
+    flex-flow: row nowrap;
+    overflow: hidden;
+  }
+
+  .form_container {
+    max-width: 50%;
+  }
+}

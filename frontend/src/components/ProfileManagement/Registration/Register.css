@@ -1,0 +1,125 @@
+.register_container {
+  max-width: 850px;
+  min-width: 800px;
+  max-height: 650px;
+  min-height: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.image_view {
+  max-width: 60%;
+  max-height: 100%;
+}
+
+/* #root > div > div > div > div.register--form_container > form > div > div:nth-child(6) > button {
+  background-color: #044e7f;
+  border-color: #044e7f;
+  opacity: 1;
+  margin-top: 1rem;
+} */
+
+.image_view > img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.register--form_container {
+  max-width: 49%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+input {
+  margin: 0 0 0.5rem 0;
+}
+
+label {
+  margin-bottom: 0.2rem;
+}
+
+.login_text {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 24px;
+  color: #292929;
+}
+
+.register_navigation {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
+.forgot_navigation {
+  width: 100%;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+
+#root > div > div > div > div.register--form_container > form > div > div > div > div > p {
+  margin: 0 15px 5px 0px;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .register_container {
+    max-width: 400px;
+    min-width: 60vw;
+    min-height: 60vh;
+    max-height: 800px;
+    flex-flow: column nowrap;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .register--form_container {
+    max-width: 100%;
+  }
+
+  .image_view {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 426px) {
+  .register_container {
+    max-width: 100%;
+    min-width: 100vw;
+    min-height: 60vh;
+    max-height: 80vh;
+    flex-flow: column nowrap;
+    align-content: center;
+    overflow: hidden;
+    box-shadow: unset;
+  }
+
+  .image_view {
+    display: none;
+  }
+
+  .register--form_container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .register_container {
+    flex-flow: row nowrap;
+    overflow: hidden;
+  }
+}
